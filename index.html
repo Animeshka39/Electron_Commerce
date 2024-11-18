@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рекламний банер ЧДТУ</title>
+  <style>
+ 
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 800px;
+      background: linear-gradient(135deg, #004d99, #006bb3);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .banner .logo {
+      width: 150px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .banner .logo:hover {
+      transform: scale(1.1);
+    }
+
+    .banner h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .banner p {
+      font-size: 1.25em;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .banner .cta-button {
+      background-color: #ffcc00; 
+      color: #004d99;
+      font-size: 1.2em;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .banner .cta-button:hover {
+      background-color: #e6b800; 
+      transform: translateY(-5px); 
+    }
+
+
+    @media (max-width: 600px) {
+      .banner {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .banner h1 {
+        font-size: 2em;
+      }
+
+      .banner p {
+        font-size: 1em;
+      }
+
+      .banner .cta-button {
+        padding: 12px 30px;
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="banner">
+    <img src="https://upload.wikimedia.org/wikipedia/uk/6/6f/GerbChDTU.jpg" alt="Логотип ЧДТУ" class="logo">
+    <h1>Приєднуйся до ЧДТУ!</h1>
+    <p>Технологічна освіта для твого майбутнього! Вступай до ЧДТУ і відкрий нові можливості для кар'єри.</p>
+    <a href="https://www.chdtu.edu.ua" class="cta-button">Дізнатися більше</a>
+  </div>
+
+</body>
+</html>
